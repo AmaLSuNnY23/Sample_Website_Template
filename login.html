@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+   
+</head>
+
+<body>
+    
+
+
+
+    <div class="header">
+        <img id="image1" src="images/NovaTek Solutions.gif">
+        <div class="heading">
+            <a href="aboutus.html" id="aboutus">About us</a>
+            <a href="login.html"  id="signin">Sign in</a>
+            <a href="register.html" id="signup">Sign up </a>
+            <a href="contactus.html" id="contactus">Contact us</a>
+            
+                  
+                  
+                  
+          </div>
+          <form name="form1" id="form1" method="post"  ></form>
+    <div class="container">
+        <h1 class="login-body">Sign in</h1>
+        
+        <input  type="text" id="username" name="username" placeholder="Enter your username"  onfocusout="usernamecheck()" >
+        <small id="usernameError"> </small>
+        
+        <input  type="password" id="password" name="password" placeholder="Enter your password"  onfocusout="passwordcheck()" >
+       
+        <small id="passwordError"> </small><br>
+        <button id="button" onclick="validation()">Sign in</button>
+        <p>Not a member?</p>
+        <a href="register.html"><input class="signup" type="button" value="Sign up"></a><br>
+       <a id="frgt" href="#">Forgot password</a>
+    </div> 
+    <div class="footer">
+        <p align="center">Website: www.novateksolutions.com<br>
+            Contact Email: info@novateksolutions.com<br>
+            Phone: +1 (555) 123-4567</p>
+    </div>
+</form>
+
+<script src="login.js"></script>
+</body>
+</html>

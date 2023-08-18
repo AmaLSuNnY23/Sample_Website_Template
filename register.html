@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >sign up</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+
+<body >
+    <div class="header">
+        <img id="image1" src="images/NovaTek Solutions.gif">
+        
+         
+        <div class="heading">
+            <a href="aboutus.html" id="aboutus"><h4 >About us</h4></a>
+            <a href="login.html" id="signin"><h4 >Sign in</h4></a>
+            <a href="register.html"id="signup"><h4 >Sign up</h4></a>
+            <a href="contactus.html" id="contactus"><h4 >Contact us</h4></a>  
+          </div>
+    </div>
+    <form action="index.html" method="post"  name="form1" id="form1"  >
+        <div class="content">
+            
+        <h1 class="label-signup">Sign up</h1>
+        <div class="firstname">
+            <label class="l1">First name</label>
+            <input  type="text" id="text-firstname" placeholder="First Name" onfocusout="validatefirstname()">
+            <span id="firstnameerror"></span>
+        </div>
+        <div class="lastname">
+            <label class="l2" >Last name</label>
+            <input  type="text" id="text-lastname"placeholder="Last Name" onfocusout="validatelastname()">
+            <span id="lastnameerror"></span>
+        </div>
+        <div class="dateofbirth">
+            <label class="l11" >Date of birth   </label>
+            <input id="text-dateofbirth" id="dob" type="date"   max="">
+
+        </div>
+        <div class="age">
+            <label class="l3">Age</label>
+            <input  id="text-age"type="text" placeholder="Age">
+            <span id=""></span>
+
+        </div>
+        <div class="gender">
+            <label class="label-gender">Gender</label>
+            <input class="radio-male"type="radio" id="male" name="gender" value="male">
+            <label class="label-male" >Male:</label>
+            <input class="text-female"type="radio"id="male" name="gender" value="male">
+            <label class="label-emale" >Female:</label>
+            <input class="texr-other"type="radio"id="other" name="gender" value="other">
+            <label class="label-ther">Other:</label>
+            
+
+        </div>
+        <div class="phonenumber">
+            <label  class="l1" >Phone number</label>
+            <input class="phn" id="text-phoneno"type="number" maxlength="10" placeholder="Phone Number" onfocusout="validatenumber()">
+            <span id="numbererror"></span>
+
+        </div>
+        <div class="emailid">
+            <label class="l1" >Email address</label>
+            <input class="email" id="text-email" type="text" placeholder="Email ID" onfocusout="validateemail()">
+            <span id="emailerror"></span>
+
+        </div>
+        <div class="state">
+            <label class="statelabel">State</label>
+            <select id="select-state" onfocusout="ChangeCityList()">
+            <option value="">-- state --</option>
+            <option value="ker">Kerala</option>
+            <option value="goa">Goa</option>
+            <option value="kar">Karnataka</option>
+            <option value="tam">Tamilnadu</option>
+          </select>
+          <span id="stateerror"></span>
+
+        </div>
+        <div class="city">
+            <label class="citylabel">City</label>
+            <select id="select-city" onfocusout=""></select>
+            <span id="staterror"></span>
+
+        </div>
+        <div class="username">
+            <label class="usernamelabel">Username</label>
+            <input class="un" type="text" id="text-username" placeholder="Username" onfocusout="validateusername()">
+            <span id="usernameerror"></span>
+
+        </div>
+        <div class="password">
+            <label class="l1">Password</label>
+            <input class="pw"type="password"  id="text-password"  placeholder="Password" onfocusout="validatepassword()">
+            <span id="passworderror"></span>
+
+        </div>
+        <div class="cpassword">
+            <label class="l1">Confirm password</label>
+            <input class="cpw"type="password" id="text-cpassword"   placeholder="Confirm password" onfocusout="validatecpassword()">
+            <span id="cpassworderror"></span>
+
+        </div>
+        <div class="submit">
+            <button id="button" class="signup" onclick="validate()">Submit</button>
+        
+
+        </div>
+    </div>
+    <div class="footer">
+            <p id="footer-label">Website: www.novateksolutions.com<br>
+            Contact Email: info@novateksolutions.com<br>
+            Phone: +1 (555) 123-4567</p>
+    </div>
+    </form>
+   <script src="register.js"></script>
+    
+</body>
+</html>
